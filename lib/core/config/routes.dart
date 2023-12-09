@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/core/config/pages_route_names.dart';
-import 'package:movies_app/featurs/home/pages/home_view.dart';
-import 'package:movies_app/featurs/splash/pages/splash_view.dart';
+import 'package:movies_app/features/home_layout/pages/home_layout.dart';
+import 'package:movies_app/features/splash/pages/splash_view.dart';
 
 class Routes {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -13,7 +13,7 @@ class Routes {
         );
       case PagesRouteNames.home:
         return MaterialPageRoute(
-          builder: (context) => const HomeView(),
+          builder: (context) => const HomeLayout(),
           settings: settings,
         );
       default:
